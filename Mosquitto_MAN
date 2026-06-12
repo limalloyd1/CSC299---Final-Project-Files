@@ -1,0 +1,16 @@
+Mosquitto works based on a subscriber and publisher model
+
+The subscriber listens for the publisher's message and takes in basic strings as commands 
+Usage of Node-RED allows for control of a general-purpose input/outpit (GPIO) pin in response to MQTT message publications.
+
+###### COMMANDS ######
+
+--- SUBSCRIBER INIT ---
+mosquitto_sub -d -t chimera
+
+--- PUBLISHER INIT ---
+mosquitto_pub -d -t chimera -m "saying hello"
+
+
+
+One example usage would be to automate a schedule for turning off your living room lights 
